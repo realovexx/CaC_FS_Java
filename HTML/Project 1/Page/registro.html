@@ -35,37 +35,33 @@
         <section id="reg">
             <h1>Registrate!</h1>
             <br>
-            <form action="" method="Post" enctype="multipart/form-data">
+            <form action="" method="Post" enctype="multipart/form-data"> <!--en action iria un metodo php-->
                 <div>
-                    <label for="nombre">Nombre del usuario</label><br>
-                    <input type="text" name="nombre" id="nombre" size="20" maxlength="144" required><br>
+                    <input type="text" name="nombre" id="nombre" size="20" maxlength="144" placeholder="Nombre" required><br>
                 </div>
                 <div>
-                    <label for="apellido">Apellido del usuario</label><br>
-                    <input type="text" name="apellido" id="apellido" size="20" maxlength="144" required><br>
+                    <input type="text" name="apellido" id="apellido" size="20" maxlength="144" placeholder="Apellido" required><br>
                 </div>
                 <div>
-                    <label for="nombre">eMail del usuario</label><br>
-                    <input type="text" name="mail" id="mail" size="20" maxlength="144" required><br>
+                    <input type="text" name="mail" id="mail" size="20" maxlength="144" placeholder="e-mail" required><br>
                 </div>
                 <div>
-                    <label for="contra">Contraseña del usuario</label><br>
-                    <input type="password" name="contra" id="contra" required><br>
+                    <input type="password" name="contra" id="contra" placeholder="Contraseña" required><br>
                 </div>
                 <div>
-                    <label for="fnac">Fecha de nacimiento del usuario</label><br>
+                    <label for="fnac">Fecha de Nacimiento</label><br>
                     <input type="date" name="fnac" id="fnac" required><br>
                 </div>
                 <div>
-                    <label for="sexo">Sexo del usuario</label><br>
+                    <label for="sexo">Genero</label><br>
                     <input type="radio" name="sexo" id="h" value="1"><label for="h">Hombre</label><br>
                     <input type="radio" name="sexo" id="m" value="2"><label for="m">Mujer</label><br>
                     <input type="radio" name="sexo" id="n" value="3"><label for="n">Prefiero no decir</label><br>
                 </div>
                 <div>
-                    <label for="pais">Pais nacimiento del usuario</label><br>
-                    <select name="pais" id="pais" size="1" multiple="" required>
-                        <option value="AR">Argentina</option>
+                    <label for="pais">Pais nacimiento</label><br>
+                    <select name="pais" id="pais" size="3" multiple="" required>
+                        <option value="AR" selected>Argentina</option>
                         <option value="UY">Uruguay</option>
                         <option value="CL">Chile</option>
                         <option value="PE">Peru</option>
@@ -97,10 +93,10 @@
         <ul>
             <!--lista de links. atajo: li*3+tab-->
             <li>
-                <a href="./page/somos.html">Quienes somos</a>
+                <a href="./somos.html">Quienes somos</a>
             </li>
             <li>
-                <a href="./page/contacto.html">Contactanos</a>
+                <a href="./contacto.html">Contactanos</a>
             </li>
         </ul>
     </footer>
