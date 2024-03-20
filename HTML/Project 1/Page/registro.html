@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>laRegistrancia</title>
+    <title>Formulario de registro</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../assets/img/Logo.png" alt="Logo" width="50" ></a> <!--lazy es para que se cargue solo cuando es visible-->
-            cabecita 2
+            <a href="../index.html"><img src="../assets/img/Logo.png" alt="Logo" width="50"></a>
+            <!--lazy es para que se cargue solo cuando es visible-->
+            (slogan?)
             <ul>
                 <!--lista de links. atajo: li*3+tab-->
                 <li>
-                    <a href="">Coso</a>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=5MbfXsa2ME9y6u4H">RickRoll</a>
                 </li>
                 <li>
                     <a href="#">Registro</a>
@@ -22,22 +25,75 @@
                 <li>
                     <a href="./signin.html">Iniciar Sesion</a>
                 </li>
+                <li>
+                    <a href="https://www.google.com.ar" target="_blank"> Búsqueda </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Reg</h1>
+        <section id="reg">
+        <h1>Registrate!</h1>
         <br>
-        <h3> Imagen relativa </h3>
+        <form action="" method="Post" enctype="multipart/form-data">
+            <div>
+                <label for="nombre">Nombre del usuario</label><br>
+                <input type="text" name="nombre" id="nombre" size="20" maxlength="144" required><br>
+            </div>
+            <div>
+                <label for="apellido">Apellido del usuario</label><br>
+                <input type="text" name="apellido" id="apellido" size="20" maxlength="144" required><br>
+            </div>
+            <div>
+                <label for="nombre">eMail del usuario</label><br>
+                <input type="text" name="mail" id="mail" size="20" maxlength="144" required><br>
+            </div>
+            <div>
+                <label for="contra">Contraseña del usuario</label><br>
+                <input type="password" name="contra" id="contra" required><br>
+            </div>
+            <div>
+                <label for="fnac">Fecha de nacimiento del usuario</label><br>
+                <input type="date" name="fnac" id="fnac" required><br>
+            </div>
+            <div>
+                <label for="sexo">Sexo del usuario</label><br>
+                <input type="radio" name="sexo" id="h" value="1"><label for="h">Hombre</label><br>
+                <input type="radio" name="sexo" id="m" value="2"><label for="m">Mujer</label><br>
+                <input type="radio" name="sexo" id="n" value="3"><label for="n">Prefiero no decir</label><br>
+            </div>
+            <div>
+                <label for="pais">Pais nacimiento del usuario</label><br>
+                <select name="pais" id="pais" size="1" multiple="" required>
+                    <option value="AR">Argentina</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="CL">Chile</option>
+                    <option value="PE">Peru</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="MX">Mexico</option>
+                </select>
+                <br>
+            </div>
+            <div>
+                <label for="tyv">Acepta terminos y condiciones</label>
+                <input type="checkbox" name="tyc" id="tyc">
+                <br>
+            </div>
+            <div>
+                <button type="submit" name="enviar">Registrate!</button>
+                <button type="reset" name="borrar">Limpiar campos</button>
+                <br>
+        </form>
+
         <br>
-        <img src="../assets/img/img2.png" alt="descripcion de imagen"loading="lazy">
-        <br>
-        <h3> Imagen absoluta</h3>
-        <br>
-        <img src="https://images.pexels.com/photos/18424481/pexels-photo-18424481/free-photo-of-pescando-mar-hombre-relajacion.jpeg" alt="imagen online" loading="lazy"> 
+        </div>
+    </section>
     </main>
     <footer>
         piecito
     </footer>
 </body>
+
 </html>
