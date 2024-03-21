@@ -1,0 +1,10 @@
+* {} /*Reseteo de valores*/
+body {background: aliceblue;}
+main {font-family: Arial, Helvetica, sans-serif;}
+header,footer {font-family:Verdana, Geneva, Tahoma, sans-serif; background: darkcyan;}
+section {padding: 20px 5px ;}
+h1 {font-size:xx-large; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;}
+p {color: #121111; font-size:medium; text-align: justify;}
+form {background: #f0f0fa}
+/*uso . para clase y # para id*/
+.cuerpoArticulo {background: lightgrey;}
