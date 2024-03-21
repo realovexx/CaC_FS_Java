@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Practica 04 - Registro</title>
+    <link rel="STYLESHEET" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><button>Home</button></a>
+        <a href="#"><button>Acerca de</button></a>
+        <a href="#"><button>Contacto</button></a>
+        <a href="#"><button>Registrarse</button></a>
+        <a href="#"><button>Sucursales</button></a>
+        <div>
+            <h1>La cocina de Juan</h1>
+        </div>
+    </header>
+    <main>
+       <h2>Formulario de registro</h2>
+       <form action="Post" enctype="multipart/form-data">
+        <div class="formRow">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" size="20" maxlength="144" placeholder="Ingrese su nombre aqui." required>
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellido" id="apellido" size="20" maxlength="144" placeholder="Ingrese su apellido aqui." required>
+        </div>
+        Dirección:
+        <div class="formRow">
+            <label for="calle">Calle: </label>
+            <input type="text" name="calle" id="calle" size="20" maxlength="144" placeholder="Ingrese su calle aqui..." required>
+            <label for="altura">Numero: </label>
+            <input type="text" name="altura" id="altura" size="20" maxlength="144" placeholder="Ingrese el numero.." required>
+            <label for="city">Ciudad: </label>
+            <input type="text" name="city" id="city" size="20" maxlength="144" placeholder="C.A.B.A." required>
+            <label for="postal">Código Postal: </label>
+            <input type="text" name="postal" id="postal" size="20" maxlength="144" placeholder="Ingrese su codigo postal" required>
+        </div>
+        <div class="formRow">
+            <label for="tel">Telefono: </label>
+            <input type="text" name="tel" id="tel" size="14" maxlength="144" placeholder="Ingrese su telefono aqui" required>
+            <label for="fnac">Fecha Nac.: </label>
+            <input type="date" name="fnac" id="fnac" size="20" maxlength="144" required>
+            <label for="email">Mail: </label>
+            <input type="text" name="email" id="email" size="20" maxlength="144" required>
+            <label for="pass">Clave: </label>
+            <input type="password" name="pass" id="pass" size="15" maxlength="144" required>
+            <label for="tp3">Link del TP3: </label>
+            <input type="text" name="tp3" id="tp3" size="20" maxlength="144">
+        </div>
+        <div class="formRow">
+            <label for="genero">Genero: (Radio)</label>
+            <input type="radio" name="genero" id="male" value="H"> Hombre 
+            <input type="radio" name="genero" id="female" value="M"> Mujer 
+            <input type="radio" name="genero" id="other" value="O"> Otro 
+        </div>
+        <div class="formRow">
+            Conocimientos previos: (checkbox)
+            <input type="checkbox" name="html" value="1">HTML 
+            <input type="checkbox" name="css" value="2">CSS 
+            <input type="checkbox" name="bs" value="3">Bootstrap 
+            <input type="checkbox" name="js" value="4">JavaScript 
+            <input type="checkbox" name="ts" value="5">TypeScript 
+            <input type="checkbox" name="ang" value="6">Angular 
+            <input type="checkbox" name="db" value="7">Base de Datos 
+            <input type="checkbox" name="pt" value="8">Python 
+            <input type="checkbox" name="dj" value="9">Django 
+        </div>
+        <div class="formRow">
+           <label for="est">Estudios (Select)</label> 
+           <select name="est">
+            <option>Primaria</option>
+            <option>Secundaria</option>
+            <option>Estudio Terciario</option>
+            <option>Carrera Universitaria</option>
+            <option>Estudio de Posgrado</option>
+           </select>
+        </div>
+        <div class="formRow">
+            <label for="comm">Comentarios:</label>
+        </div>
+        <div class="formRow"> 
+            <textarea name="comm" rows="10" cols="80"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+       </form>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.x.com" target="_blank"><img src="../assets/icons/twitter.png" class="social" alt="Twitter"></a>
+            <a href="https://www.fb.com" target="_blank"><img src="../assets/icons/facebook.png" class="social" alt="Facebook"></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="../assets/icons/pinterest.png" class="social" alt="Pinterest"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../assets/icons/instagram.png" class="social" alt="Instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="../assets/icons/linkedin.png" class="social" alt="Linkedin"></a>
+            <a href="https://github.com/realovexx" target="_blank"><img src="../assets/icons/github.png" class="social" alt="GitHub"></a>
+        </div>
+        Derechos reservados @2020
+    </footer>
+</body>
+</html>

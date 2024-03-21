@@ -1,0 +1,8 @@
+*{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h1 {text-align: center;}
+header {background: black; color: white;}
+footer {text-align: center; background-color: black; color: white;}
+.gbt {background-color: gray; color: white; border-radius: 5px; padding: 5px;}
+main {margin-top: 10px; margin-bottom: 30px;}
+.social {background-color: white; width: 24px; border-radius: 7px; border: 4px; border-color: black;}
+.formRow {margin-bottom: 5px;}
